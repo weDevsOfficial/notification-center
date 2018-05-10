@@ -1,0 +1,13 @@
+config.codekit
+.idea
+.codekit-cache
+/vendor/
+node_modules
+npm-debug.log
+build
+.DS_Store
+nbproject
+debug.log
+.netbeans.xml
+plugin-deploy.sh
+.tmp

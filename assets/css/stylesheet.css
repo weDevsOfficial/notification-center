@@ -1,0 +1,140 @@
+#wpadminbar #wp-admin-bar-notification-center {
+    position: relative;
+}
+#wpadminbar #wp-admin-bar-notification-center .ab-icon:before {
+    content: "\f319";
+    top: 3px;
+}
+#wpadminbar #wp-admin-bar-notification-center .notif-count {
+    position: absolute;
+    right: 1px;
+    top: -5px;
+}
+#wpadminbar #wp-admin-bar-notification-center .notif-count .notif-value {
+    background-color: #fa3e3e;
+    padding: 1px 3px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 10px;
+}
+#wpadminbar #wp-notification-wrap {
+    position: absolute;
+    top: 36px;
+    z-index: 1015;
+    min-width: 430px;
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,.08);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: auto;
+    right: -15px;
+    color: #444;
+}
+#wpadminbar #wp-notification-wrap:after, #wpadminbar #wp-notification-wrap:before {
+    bottom: 100%;
+    right: 30px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+#wpadminbar #wp-notification-wrap:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 7px;
+    margin-left: -7px;
+}
+#wpadminbar #wp-notification-wrap:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-bottom-color: #ccc;
+    border-width: 8px;
+    margin-left: -8px;
+}
+#wpadminbar #wp-notification-wrap * {
+    box-sizing: border-box;
+    line-height: 165%;
+}
+#wpadminbar .notification-header-wrap {
+    background-color: #fff;
+    border-bottom: 1px solid #e3e8eb;
+    box-shadow: 0 2px 3px -1px rgba(0,0,0,.05);
+    padding: 5px 10px;
+}
+#wpadminbar .notification-header {
+    display: flex;
+}
+#wpadminbar .notification-header .header-area {
+    max-width: 100%;
+    flex: 1;
+}
+#wpadminbar .notification-header .header-area h1 {
+    font-size: 14px;
+    line-height: 2;
+}
+#wpadminbar .notification-header .read-area {
+    text-align: right;
+    max-width: 100%
+}
+#wpadminbar #wp-notification-wrap .read-area a {
+    line-height: 32px;
+}
+#wpadminbar .notification-header .header-area h1 {
+    font-size: 18px;
+}
+.notification-header .header-area h1 .notification-count {
+    color: #ff9139;
+    top: -1px;
+    padding-left: 4px;
+    position: relative;
+}
+#wpadminbar .notification-content {
+    height: 80vh;
+    max-height: 800px;
+    min-height: 280px;
+    overflow-y: scroll;
+}
+#wpadminbar .notification-content ul {
+    display: block;
+    width: 100%;
+}
+#wpadminbar .notification-content ul li {
+    float: none;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #e3e8eb;
+    padding: 8px 10px 4px 10px;
+}
+#wpadminbar .notification-content ul li.unread {
+    background-color: #f1faff;
+    box-shadow: 3px 0 0 #3197d6 inset;
+}
+#wpadminbar .notification-content ul li a {
+    padding: 0;
+    height: auto;
+    color: #444;
+    font-weight: normal;
+}
+#wpadminbar .notification-content ul li a strong {
+    font-weight: bold;
+}
+#wpadminbar .notification-content ul li .notif-item {
+    display: flex;
+}
+#wpadminbar .notification-content .notif-item .notif-icon {
+    margin-right: 10px;
+    max-width: 100%;
+}
+#wpadminbar .notification-content .notif-item .notif-icon img {
+    overflow: hidden;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+#wpadminbar .notification-content .notif-item .notif-message {
+    line-height: 100%;
+}
+#wpadminbar .notification-content .notif-item .notif-time {
+    color: #999;
+}
